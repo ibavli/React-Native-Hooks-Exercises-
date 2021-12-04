@@ -1,13 +1,21 @@
 import React from 'react';
-import { Text, StyleSheet } from 'react-native';
+import { View, Button, StyleSheet } from 'react-native';
 
 
-const HomeScreen = () => {
-  return <Text>Hello RN!</Text>
+const HomeScreen = ({ navigation }) => {
+    return (
+        <View>
+
+            <Button
+                onPress={() => navigation.navigate("CounterScreen")}
+                title="Go to Counter Screen" />
+
+        </View>
+    )
 };
 
 const styles = StyleSheet.create({
-
+  
 });
 
 export default HomeScreen;
