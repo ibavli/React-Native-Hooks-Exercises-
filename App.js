@@ -3,12 +3,14 @@ import { createStackNavigator } from "react-navigation-stack";
 import ColorScreen from "./src/screens/ColorScreen";
 import CounterScreen from "./src/screens/CounterScreen";
 import HomeScreen from "./src/screens/HomeScreen";
+import SquareScreen from "./src/screens/SquareScreen";
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     CounterScreen: CounterScreen,
-    ColorScreen : ColorScreen
+    ColorScreen : ColorScreen,
+    SquareScreen: SquareScreen
   },
   {
     initialRouteName: "Home",
